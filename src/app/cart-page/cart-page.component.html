@@ -1,0 +1,60 @@
+<div class="container">
+    <h1>Cart Page</h1>
+    <div class="row">
+    
+        <div class="col-sm-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <!-- Outer row to contain the cart items -->
+                    <div class="row">
+                        <div *ngFor="let car of cartData" class="col-md-12 mb-1">
+                            <!-- Individual cart item as a row -->
+                            <div class="row">
+                                <div class="col-md-2 my-auto">
+                                    <img src="{{ car.imag }}" height="70px" width="70px" alt="">
+                                </div>
+                                <div class="col-md-4 my-auto">
+                                    <h6>{{ car.name }}</h6>
+                                </div>
+                                <div class="col-md-2 my-auto">
+                                    <h6>{{ car.price | currency:"INR" }}</h6>
+                                </div>
+                                <div class="col-md-3 my-auto text-center">
+                                    <h6 for="Quantity">Quantity: {{ car.quantity }}</h6>
+                                </div>
+                                <div class="col-md-1 my-auto">
+                                    <fa-icon [icon]="deleteIcon" class="hand-cursor" (click)="removeToCart(car.id)" ></fa-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display "Your cart is empty" if cartData is empty -->
+                    <h4 *ngIf="!cartData">Your cart is empty</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card shadow shadow-secondary ">
+                <div class="card-body ">
+                    <h4>Cart Summary</h4>
+                    <hr>
+                    <div class="summary-item "><span class="text">Amount </span><span
+                            class="price my-auto">Rs. {{priceSumary.price}}</span></div>
+                    <div class="summary-item "><span class="text">Tax </span><span
+                            class="price my-auto">{{priceSumary.tax}}</span></div>
+                    <div class="summary-item "><span class="text">Delivery </span><span
+                            class="price my-auto">Rs. {{priceSumary.delivery}}</span></div>
+                    <div class="summary-item "><span class="text">Discount </span><span
+                            class="price my-auto">{{priceSumary.discount}}</span></div>
+                    <div class="summary-item "><span class="text" style="font-size: 28px;">Total </span><span
+                            class="price mt-2">Rs. {{priceSumary.total}}</span></div>
+
+                    <a class="btn btn-outline-success d-flex justify-content-center">Checkout</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container">
+    <div *ngIf="isSellerLogin===true" class="p-4 m-4">
+        <div class="col-lg-5 border rounded mx-auto p-4 shadow-lg mb-5 bg-body-tertiary rounded">
+            <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+                <h2>Seller Sign-Up form</h2>
+                <hr>
+                <div class="form-group mt-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control form-control-sm" name="name" ngModel placeholder="Enter Your Name">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-sm" name="email" ngModel placeholder="abc@gmail.com">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-sm" name="password" ngModel placeholder="*********">
+                </div>
+                <div class="form-group mt-3 my-5">
+                    <button type="submit" class="btn btn-outline-info btn-sm col-lg-5 float-end">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div class="text-center">
+            <a (click)="displayLogin()"><small><b>Already have an account... Click here to &nbsp;&nbsp;<p class="badge text-bg-success rounded-pill text-wrap" style="width: 4rem;" role="button">login</p></b></small></a>
+        </div>
+    </div>
+
+    <!--seller login form -->
+    <div class="p-4 m-4" *ngIf="isSellerLogin===false">
+        <div class="col-lg-4 border rounded mx-auto p-4 shadow-lg mb-5 bg-body-tertiary rounded">
+            <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+                <h2>Seller Login form</h2>
+                <hr>
+                <div class="form-group mt-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-sm" name="email" ngModel placeholder="abc@gmail.com">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-sm" name="password" ngModel placeholder="*********">
+                </div>
+                <div class="form-group mt-3 my-5">
+                    <button type="submit" class="btn btn-outline-info btn-sm col-lg-5 float-end">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="text-center">
+            <a (click)="displaySignup()"><small>Don't have an account.... ?&nbsp;&nbsp;<p class="badge text-bg-success rounded-pill text-wrap" style="width: 4rem;" role="button">sign up</p></small></a>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,52 @@
+<div class="container"></div>
+<ngb-carousel *ngIf="carouselProduct">
+    <ng-template *ngFor="let display of carouselProduct" ngbSlide>
+        <div class="picsum-img-wrapper">
+            <a routerLink="/details/{{display.id}}">
+                <img class="product-header-img" src="{{display.imag}}" alt="Random first slide" />
+            </a>
+        </div>
+        <div class="carousel-caption mx-auto">
+            <h3>{{display.name}}</h3>
+            <p>{{display.description}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">Trending Products</h3>
+            <hr>
+            <div class="row ">
+                <div class="col-md-3 product_data item" *ngFor="let i of trendingProduct">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <a  routerLink="/details/{{i.id}}" class="text-decoration-none">
+                                <div class="productshome">
+                                    <img src="{{ i.imag }}" alt="" class="w-100">
+                                </div>
+                                <h4 class="text-center text-dark">{{ i.name }}</h4>
+                            </a>
+                            <span class="float-end fw-bold mt-1" style="color: #ed0528">Rs {{ i.price }}</span>
+                            <!-- <div class="row mt-2"> -->
+
+                            <input type="hidden" value="{{ i.id }}" class="prod_id">
+                            <input type="hidden" name="quantity" class="qty-input" value="1">
+                            <!-- <div class="col-md-6 px-0"> -->
+                            <span class="mb-2">
+                                <button type="button" class="btn btn-primary me-1 float-start btn-sm addToCartBtn">Cart
+                                    <i class="fa fa-shopping-cart"></i> </button>
+                                <button type="button"
+                                    class="btn btn-danger me-2 float-start btn-sm addToWishlist">Wishlist <i
+                                        class="fa fa-heart"></i></button>
+                            </span>
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+.product-color {
+    border: 3px solid #000;
+    width: 24px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 16px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+
+.btn-grad {
+    font-weight: bold;
+    background-image: linear-gradient(to right, #43cea2 0%, #185a9d 51%, #43cea2 100%);
+    padding:  4px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad2 {
+    background-image: linear-gradient(to right, #C02425 0%, #F0CB35  51%, #C02425 100%);
+    padding:  4px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+.btn-grad1 {
+    background-image: linear-gradient(to right, #FF4E50 0%, #F9D423 51%, #FF4E50 100%);
+    border: 1px solid grey;
+    font-weight: bold;
+    padding:  4px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}

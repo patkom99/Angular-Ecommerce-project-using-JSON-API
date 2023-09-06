@@ -1,0 +1,61 @@
+.suggested-result{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: whitesmoke;
+    width: 410px;
+    top: 40px;
+    list-style-type: none;
+}
+
+.suggested-result li{
+    border: 1px solid #fff;
+    padding: 5px;
+    list-style-type: none;
+}
+
+
+.suggested-result li a{
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* background-color: lightgreen; */
+    border: none;     
+}
+
+
+         
+.btn-grad1 {
+    background-image: linear-gradient(to right, #B3FFAB 0%, #12FFF7  51%, #B3FFAB  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;       
+    font-weight: bold;     
+    margin-top: 8px;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;  
+    padding: 0%;
+  } 
+
+  
+
+  .btn-grad {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(to right,  #FF512F 0%, #F09819  51%, #FF512F  100%);
+    text-align: center;
+    text-transform: uppercase;
+    /* transition: 0.5s; */
+    background-size: 200% auto;
+    color: white;       
+    font-weight: bolder;     
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+ 

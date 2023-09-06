@@ -1,0 +1,40 @@
+<div class="p-4 m-1">
+    <div class="mx-auto p-4 col-lg-8 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <form #sellerUpdateProduct="ngForm" (ngSubmit)="updateProduct(sellerUpdateProduct.value)" method="post">
+            <h1 class="text-center">Update Product</h1>
+            <hr>
+            <table class="table align-middle mb-0 bg-white">
+                
+                <tbody>
+                  <tr>
+                    <th class="col-lg-3">Product Name</th>
+                    <td><input type="text" name="name" ngModel="{{productData.name}}" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <th>Product Price</th>
+                    <td><input type="text" name="price" ngModel="{{productData.price}}" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <th>Product Color</th>
+                    <td><input type="text" name="color" ngModel="{{productData.color}}" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <th>Product Category</th>
+                    <td><input type="text" name="category" ngModel="{{productData.category}}" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <th>Product Description</th>
+                    <td><input type="textarea" name="description" ngModel="{{productData.description}}" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <th>Product Image</th>
+                    <td><input type="text" name="imag" class="form-control" ngModel="{{productData.imag}}" src="" alt=""></td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="form-group mt-3 my-5">
+                <button type="submit" class="btn btn-secondary btn-rounded col-lg-5 float-end">Update Product</button>
+            </div>
+        </form>
+    </div>
+</div>

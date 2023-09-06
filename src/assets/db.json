@@ -1,0 +1,186 @@
+{
+  "seller": [
+    {
+      "name": "mayank agarwal",
+      "email": "ma@gmail.com",
+      "password": "1234567",
+      "id": 1
+    },
+    {
+      "name": "agnik drikal",
+      "email": "akaa@gmail.com",
+      "password": "12345687",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Jacket",
+      "price": "2999",
+      "color": "blue",
+      "category": "Clothing",
+      "description": "stylish jacket",
+      "imag": "https://img.freepik.com/free-photo/handsome-man-winter-jacket-posing-street_1303-30010.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=ais",
+      "id": 1
+    },
+    {
+      "name": "Addidas striker's",
+      "price": "2500",
+      "color": "Black ",
+      "category": "Shoes",
+      "description": "Great Compfort",
+      "imag": "https://img.freepik.com/free-photo/sneaker-that-has-word-nike-it_123827-23436.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=sph",
+      "id": 2
+    },
+    {
+      "name": "Denim ",
+      "price": "1400",
+      "color": "azure",
+      "category": "Jeans",
+      "description": "stylish Bottom wear",
+      "imag": "https://img.freepik.com/free-photo/stylish-tall-arabian-man-model-white-shirt-jeans-sunglasses-posed-street-city-beard-attractive-arab-guy_627829-2542.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=sph",
+      "id": 3
+    },
+    {
+      "name": "Denim Jacket",
+      "price": "1800",
+      "color": "Maroon",
+      "category": "Clothing",
+      "description": "Denim black jacket",
+      "imag": "https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-black-jacket-jeans-fashion-male-posing-studio-near-grey-wall_158538-24006.jpg?w=740&t=st=1690282241~exp=1690282841~hmac=7de43200875c52693366516564a1a1bef4bc58f535a5cae171cf35c2633b8401",
+      "id": 4
+    },
+    {
+      "name": "Iphone",
+      "price": "120000",
+      "color": "Light Yellow",
+      "category": "Mobiles",
+      "description": "Amazing Features",
+      "imag": "https://img.freepik.com/free-photo/tech-device-with-nature-background_23-2150470431.jpg?size=626&ext=jpg&ga=GA1.2.1808516270.1670210502&semt=sph",
+      "id": 5
+    },
+    {
+      "name": "Bluetooth Speakers",
+      "price": "5000",
+      "color": "black",
+      "category": "Speakers",
+      "description": "Boat Smart Speakers",
+      "imag": "https://img.freepik.com/free-photo/high-angle-smart-speaker-home_23-2150171764.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=sph",
+      "id": 6
+    },
+    {
+      "name": "Samsung S12 PRO",
+      "price": "22999",
+      "color": "Navy Blue",
+      "category": "Mobiles",
+      "description": "Good Product",
+      "imag": "https://img.freepik.com/free-psd/smartphone-mockup_1310-873.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=ais",
+      "id": 7
+    },
+    {
+      "name": "Wireless earbuds",
+      "price": "1799",
+      "color": "Black",
+      "category": "Earbuds",
+      "description": "Boult Earbuds",
+      "imag": "https://img.freepik.com/premium-photo/young-caucasian-girl-with-wireless-headphones-park-using-tablet-smiling_280733-718.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=ais",
+      "id": 8
+    },
+    {
+      "name": "Rounded Neck",
+      "price": "450",
+      "color": "Dark Blue",
+      "category": "Clothing",
+      "description": "Regular Fit Package contains: 1 shirt Machine wash Cotton",
+      "imag": "https://img.freepik.com/free-photo/stylish-casual-indian-man-wear-blue-tshirt-posing-against-grey-wall_627829-4727.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=sph",
+      "id": 9
+    },
+    {
+      "name": "Smart watch",
+      "price": "2599",
+      "color": "Dark Grey",
+      "category": "Accessories",
+      "description": "smart watch",
+      "imag": "https://img.freepik.com/free-photo/new-smartwatch-balancing-with-hand_23-2150296477.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=ais",
+      "id": 10
+    },
+    {
+      "name": "Sunglass",
+      "price": "2999",
+      "color": "Matte black",
+      "category": "Accessories",
+      "description": "Good Product",
+      "imag": "https://img.freepik.com/free-photo/man-sunglasses-hat-drinking-beer-resting-country-house_176420-3957.jpg?t=st=1690284933~exp=1690285533~hmac=f3702fcf554f0695463b214706a4c36a5e71de80a8bec040babc34a7ca9cba61",
+      "id": 11
+    },
+    {
+      "name": "puma shoes",
+      "price": "4000",
+      "color": "grey",
+      "category": "Shoes",
+      "description": "Great Compfort",
+      "imag": "https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?size=626&ext=jpg&ga=GA1.2.1808516270.1670210502&semt=sph",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "fname": "omkar",
+      "lname": "patil",
+      "email": "o@gmail.com",
+      "passw": "qwert123",
+      "cpassw": "qwert123",
+      "city": "201 new spenta, near New Delhi",
+      "state": "Delhi",
+      "zip": "400021",
+      "id": 1
+    },
+    {
+      "fname": "shridhar",
+      "lname": "swehen",
+      "email": "ss@gmail.com",
+      "passw": "qwert123",
+      "cpassw": "qwert123",
+      "city": "201 new spenta, near New Delhi",
+      "state": "Delhi",
+      "zip": "400021",
+      "id": 2
+    },
+    {
+      "fname": "vijeta",
+      "lname": "sharma",
+      "email": "vs@gmail.com",
+      "passw": "qwert1234",
+      "cpassw": "qwert1234",
+      "city": "201 new spenta, near New Delhi",
+      "state": "Delhi",
+      "zip": "400021",
+      "id": 3
+    },
+    {
+      "fname": "vinsent",
+      "lname": "lops",
+      "email": "vl@gmail.com",
+      "passw": "qwert1234",
+      "cpassw": "qwert1234",
+      "city": "201 new spenta, near New Delhi",
+      "state": "Delhi",
+      "zip": "400021",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "name": "Jacket",
+      "price": "2999",
+      "color": "blue",
+      "category": "Clothing",
+      "description": "stylish jacket",
+      "imag": "https://img.freepik.com/free-photo/handsome-man-winter-jacket-posing-street_1303-30010.jpg?size=626&ext=jpg&ga=GA1.1.1808516270.1670210502&semt=ais",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 4,
+      "id": 1
+    }
+  ]
+}

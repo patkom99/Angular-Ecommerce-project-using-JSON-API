@@ -1,0 +1,47 @@
+<div class="p-4 m-1">
+    <h2 class="text-center">Products</h2>
+    <div class="mx-auto p-4 col-lg-8 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Color</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="{{product.imag}}" alt=""
+                                style="width: 45px; height: 45px" class="rounded-circle" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">{{product.name | uppercase}}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1" >{{product.price}}</p>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">{{product.color}}</p>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">{{product.category}}</p>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">{{product.description}}</p>
+                    </td>
+                    <td>
+                        <fa-icon [icon]="deleteIcon" class="hand-cursor" (click)="deleteProduct(product.id)" style="margin-left: 6px;"></fa-icon>
+                        <a routerLink="/seller-update-product/{{product.id}}" style="margin-left: 10px;"><fa-icon [icon]="editIcon"></fa-icon></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
